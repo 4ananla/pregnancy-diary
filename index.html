@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我們的懷孕日記</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 min-h-screen p-4">
+    <div class="max-w-md mx-auto bg-white rounded-3xl shadow-lg overflow-hidden border-4 border-pink-200">
+        <header class="bg-pink-400 p-6 text-white text-center">
+            <h1 class="text-2xl font-bold">🐣 寶貝成長紀錄</h1>
+        </header>
+
+        <form id="diaryForm" class="p-6 space-y-4">
+            <div>
+                <label class="block text-gray-700 font-bold mb-1">目前週期</label>
+                <input type="text" placeholder="例如：第 12 週 第 3 天" class="w-full border-2 border-pink-100 rounded-lg p-2 focus:outline-none focus:border-pink-400">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-gray-700 font-bold mb-1">寶寶身高 (cm)</label>
+                    <input type="number" step="0.1" class="w-full border-2 border-pink-100 rounded-lg p-2">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-bold mb-1">寶寶體重 (g)</label>
+                    <input type="number" class="w-full border-2 border-pink-100 rounded-lg p-2">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-bold mb-2">媽咪今日症狀</label>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <label><input type="checkbox" class="mr-1"> 孕吐</label>
+                    <label><input type="checkbox" class="mr-1"> 抽筋</label>
+                    <label><input type="checkbox" class="mr-1"> 嗜睡</label>
+                    <label><input type="checkbox" class="mr-1"> 水腫</label>
+                    <label><input type="checkbox" class="mr-1"> 心情愉悅</label>
+                    <label><input type="checkbox" class="mr-1"> 腰痠背痛</label>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-bold mb-1">爸媽的心情日記</label>
+                <textarea rows="4" placeholder="今天想對寶貝說什麼..." class="w-full border-2 border-pink-100 rounded-lg p-2 focus:outline-none focus:border-pink-400"></textarea>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-bold mb-1">超音波或大肚照</label>
+                <input type="file" accept="image/*" class="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-pink-100 file:text-pink-700 hover:file:bg-pink-200">
+            </div>
+
+            <button type="submit" class="w-full bg-pink-500 text-white font-bold py-3 rounded-xl hover:bg-pink-600 transition">
+                儲存今日回憶
+            </button>
+        </form>
+    </div>
+</body>
+</html>
